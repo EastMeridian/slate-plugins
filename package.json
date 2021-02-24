@@ -118,7 +118,10 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-optional-chaining": "^7.12.16",
-    "styled-icons": "^10.27.0"
+    "react-dnd": "^13.1.0",
+    "react-dnd-html5-backend": "^12.1.0",
+    "styled-icons": "^10.27.0",
+    "tippy.js": "^6.3.0"
   },
   "resolutions": {
     "eslint-plugin-prettier": "3.3.1",
