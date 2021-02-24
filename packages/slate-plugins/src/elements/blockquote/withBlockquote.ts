@@ -15,14 +15,7 @@ export const withBlockquote = () => <T extends ReactEditor>(editor: T) => {
     if (text) {
       if (someNode(editor, { match: { type: blockquote.type } })) {
         const current = getAbove(editor);
-        Transforms.insertNodes(
-          editor,
-          {
-            type: p.type,
-            children: [{ type: p.type, children: [{ text: '' }] }],
-          },
-          { at: Path.next(current?.[1] as Path), select: true }
-        )
+        insertEmptyElement(editor, p.type, { at: current?.[1] });
         return insertData(data);
       }
     }

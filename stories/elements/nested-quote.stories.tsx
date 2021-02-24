@@ -34,7 +34,7 @@ const initialValue = [
   {
     type: options.blockquote.type,
     children: [
-      { type: options.p.type, children: [{ text: 'Salut list' }] },
+      { type: options.p.type, children: [{ text: 'Im a quote' }] },
     ],
   },
   {
@@ -43,7 +43,7 @@ const initialValue = [
       {
         type: options.li.type,
         children: [
-          { type: options.p.type, children: [{ text: 'Bulleted list' }] },
+          { type: options.p.type, children: [{ text: 'And im a list' }] },
           {
             type: options.ul.type,
             children: [
@@ -106,7 +106,7 @@ export const Example = () => {
 
   const createReactEditor = () => () => {
     const [value, setValue] = useState(initialValue);
-    console.log('REACT EDITOR VALUE', value);
+    console.log('[createReactEditor] value', value);
     const editor = useMemo(() => pipe(createEditor(), ...withPlugins), []);
 
     return (
