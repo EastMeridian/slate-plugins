@@ -1,7 +1,6 @@
 import 'prismjs/themes/prism.css';
 import React, { useMemo, useState } from 'react';
 import { boolean } from '@storybook/addon-knobs';
-import { CodeBlock } from '@styled-icons/boxicons-regular/CodeBlock';
 import {
   FormatQuote,
   FormatListBulleted
